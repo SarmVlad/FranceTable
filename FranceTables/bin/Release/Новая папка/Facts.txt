@@ -1,0 +1,21 @@
+Крутой факт#
+Этот факт очень крут asd asd asd awd sad aw sd
+aw sa asd qw asdsds ad s wdw ds aw s adw&&
+Еще один#Да хватит ужеwa sd aw dsa wasd w asd sa wd asdws sdaw saw sd wa
+ddwasdw sd wdawdsdwdasd wdasdwds wdsd sd w!&&
+Заголовок#Впервые термин «вики» для описания веб-сайта был
+использован в 1995 году Уордом Каннингемом, разработчиком первой вики-системы WikiWikiWeb,
+«Портлендского хранилища образцов» программного кода[2],
+созданной 25 марта 1995 года, который заимствовал слово
+гавайского языка, означающее «быстрый»[3][4]. Каннингем объяснил выбор названия
+движка тем, что он вспомнил работника международного аэропорта Гонолулу, посоветовавшего 
+ему воспользоваться вики-вики шаттлом — небольшим автобусом, курсировавшим между терминалами 
+аэропорта. Каннингем же планировал сделать движок, позволявший пользователям максимально быстро редактировать и создавать статьи. Каннингем первоначально описал вики как «простейшую онлайн-базу данных, которая может функционировать»[5]. Позже этому слову был придуман английский бэкроним «What I Know Is…» («то, что я знаю, это…»)[6].&&
+Hey#When I place a TextBlock inside of a Horizontally Aligned StackPanel it does not wrap. I realize that this is because the available width of the StackPanel is PositiveInfinity but are there any workarounds?
+My layout is much more complicated than this sample so I cannot remove the StackPanel or the Horizontal Orientation. I just tried to reproduce the simplest possible example that exhibits the behavior.&&
+Факттттт#wdfsefssdfsfesfedsdfsdfsdfds sdf sdf sdf sdf sdfg dfg dfg sdf sdfg ofgbkdfgnb ilfdgnb kjgfnbindt kjfgn bfv kjdfg hvb fkgjklfn kjfgnkfn kvnib fdkjn dfjkgnikcnbm,xcnb ujilsd kcvmjn kljcvn ilng kj vbjkldsf kjv  kfgb iudf&&
+Программа JPoint: из жизни разработчика#
+ JPoint всегда славился хардкорными докладами. Которые, так уж получилось, в основном состоят из рекомендаций по написанию сборщиков мусора, компиляторов, и прочей жести, которую далеко не каждый может применить в повседневной жизни.
+ Но дело в том, что многим перформанс не интересен. Существует ещё множество проблем, которые куда важней, чем ускорение приложения на 1%. Поэтому больше половины докладов на этой конференции представляют собой вполне разумный материал, который каждый может попробовать использовать у себя.
+ Обзор программы докладов по перформансу делался в отдельном посте, — поэтому в этой статье мы не выбрасываем их вообще, но описания будут максимально краткими.
+

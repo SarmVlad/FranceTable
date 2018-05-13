@@ -1,0 +1,73 @@
+﻿<Page x:Class="FranceTables.Test"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FranceTables"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="Test">
+    <Page.Resources>
+        
+        <Style TargetType="Button" x:Key="Button">
+            <Setter Property="Background" Value="#011526"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Background="{TemplateBinding Background}" BorderThickness="1" BorderBrush="#D7D9D8">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#052947"/>
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Background" Value="#053760"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Page.Resources>
+    
+    <Grid>
+        
+        
+        
+        <ScrollViewer VerticalScrollBarVisibility="Auto" KeyDown="ShowTable_KeyDown">
+            <StackPanel HorizontalAlignment="Center">
+                <Label Margin="0,10,0,0" HorizontalAlignment="Center" Content="Teste sur le thème: " Foreground="#011526" FontSize="22"  FontFamily="Georgia"/>
+                <Label Margin="0,0,0,10" HorizontalAlignment="Center" Content="{Binding CurrentTest.Title}" Foreground="#011526" FontSize="22"  FontFamily="Georgia"/>
+                <Label Margin="0,0,0,15" HorizontalAlignment="Center" Content="Pour voir le tableau maintenez appuyé Ctrl" Foreground="#011526" FontSize="16"  FontFamily="Georgia"/>
+                <ItemsControl ItemsSource="{Binding CurrentTest.Questions}" HorizontalAlignment="Center">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel>
+                                <Label Margin="0,10,0,0" HorizontalAlignment="Center" Content="{Binding Problem}" Foreground="#011526" FontSize="22"  FontFamily="Georgia"/>
+                                <TextBox MaxWidth="750" MinHeight="60" Width="600" HorizontalAlignment="Center" TextWrapping="Wrap" TextAlignment="Left" FontSize="16" Text="{Binding Text, Mode=TwoWay}"/>
+                                <Label Margin="0,1,0,0" HorizontalAlignment="Center" Content="{Binding Request}" Foreground="#3DC246" FontSize="14"  FontFamily="Georgia">
+                                    <Label.Style>
+                                        <Style TargetType="Label">
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding ShowAnswer}"  Value="False">
+                                                    <Setter Property="Visibility" Value="Hidden"/>
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{Binding ShowAnswer}"  Value="True">
+                                                    <Setter Property="Visibility" Value="Visible"/>
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Label.Style>
+                                </Label>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+                <Button Click="Answer_Click"  Margin="0,15,0,0" HorizontalAlignment="Center" Content="Voir les réponses" Width="200" Height="50" FontSize="20"  Style="{StaticResource Button}"/>
+            </StackPanel>
+            
+        </ScrollViewer>
+    </Grid>
+</Page>
